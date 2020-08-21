@@ -5,38 +5,15 @@
   background-color: #f9f9fa;
   padding: 20px 50px;
   box-sizing: border-box;
-  border-top: 1px solid rgba(121, 121, 121, 0.2);
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
-
 .nav__list {
   display: flex;
   justify-content: space-between;
 }
-
 .nav__link {
   position: relative;
   color: #2e363e;
-}
-
-.nav__notification {
-  position: absolute;
-  left: 15px;
-  bottom: 15px;
-  animation: notificationAnimation 2s ease-in-out infinite;
-}
-
-.nav__ellipsis {
-  background-color: tomato;
-  width: 7px;
-  height: 7px;
-  border-radius: 3.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: tomato;
-  position: absolute;
-  left: 30px;
-  bottom: 27px;
 }
 
 @keyframes notificationAnimation {
@@ -51,18 +28,25 @@
   }
 }
 
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+
 @keyframes appearBtnAnimation {
   from {
     opacity: 0;
   }
   to {
-    transform: none;
     opacity: 1;
+    transform: none;
   }
 }
 
 .nav__btn {
-  transform: translateY(60px);
+  transform: translateY(50px);
   opacity: 0;
   animation: appearBtnAnimation 0.3s ease-in-out forwards;
 }
