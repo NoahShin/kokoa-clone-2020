@@ -31,6 +31,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
+
 #login-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
@@ -50,4 +51,5 @@
   text-align: center;
   text-decoration: none;
   color: inherit;
+  font-size: 13px;
 }
